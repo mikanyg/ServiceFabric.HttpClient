@@ -44,8 +44,8 @@ namespace ServiceFabric.Services.Communication.Client
         protected override Task<HttpCommunicationClient> CreateClientAsync(string endpoint, CancellationToken cancellationToken)
         {
             TraceMessage($"Creating {typeof(HttpCommunicationClient)} with internal service endpoint located at '{endpoint}'.");
-
-            var baseUri = new Uri(endpoint);
+            
+            var baseUri = new Uri(endpoint + (endpoint.EndsWith("/") ? "" : "/"));
             var handlers = delegatingHandlers?.Invoke()?.ToArray() ?? new DelegatingHandler[0];
 
             var client = HttpClientFactory.Create(handlers);
@@ -94,7 +94,6 @@ namespace ServiceFabric.Services.Communication.Client
             }
 
             return list.Union(new[] {new HttpRequestExceptionHandler()}); 
-            return list;
         }
 
         private static void TraceMessage(string message)
