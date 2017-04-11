@@ -49,8 +49,8 @@ namespace ServiceFabric.HttpClient.Test
             // Act
             var client = await sut.CreateClientAsync(endpoint, CancellationToken.None);
             // Assert
-            client.HttpClient.BaseAddress.AbsoluteUri.ShouldEndWith("/");
-            client.HttpClient.BaseAddress.AbsoluteUri.ShouldNotEndWith("//");
+            client.Http.BaseAddress.AbsoluteUri.ShouldEndWith("/");
+            client.Http.BaseAddress.AbsoluteUri.ShouldNotEndWith("//");
         }
     }
 }

@@ -13,11 +13,11 @@ namespace ServiceFabric.Services.Communication.Client
         {
             if (client == null) throw new ArgumentNullException(nameof(client));
 
-            HttpClient = client;
+            Http = client;
             Properties = new ConcurrentDictionary<string, object>();
         }
 
-        public HttpClient HttpClient { get; }
+        public HttpClient Http { get; }
 
         /// <summary>
         /// Generic properties bag for the client.
