@@ -60,7 +60,7 @@ namespace ServiceFabric.Services.Communication.Client
 
         private static void TraceMessage(string message)
         {
-            Trace.TraceInformation($"ServiceFabric.AutoRest, {nameof(HttpRequestExceptionHandler)}: {message}");
+            Trace.TraceInformation($"ServiceFabric.HttpClient, {nameof(HttpRequestExceptionHandler)}: {message}");
         }
     }
 }
