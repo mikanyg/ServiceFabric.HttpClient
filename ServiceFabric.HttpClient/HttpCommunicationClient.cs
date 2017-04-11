@@ -24,8 +24,10 @@ namespace ServiceFabric.Services.Communication.Client
         /// </summary>
         public IDictionary<string, object> Properties { get; }
 
-        public ResolvedServicePartition ResolvedServicePartition { get; set; }
-        public string ListenerName { get; set; }
-        public ResolvedServiceEndpoint Endpoint { get; set; }
+        ResolvedServiceEndpoint ICommunicationClient.Endpoint { get;set; }
+
+        string ICommunicationClient.ListenerName { get; set; }        
+
+        ResolvedServicePartition ICommunicationClient.ResolvedServicePartition { get; set; }        
     }    
 }
