@@ -45,7 +45,7 @@ namespace ServiceFabric.Services.Communication.Client
         {
             TraceMessage($"Creating {typeof(HttpCommunicationClient)} with internal service endpoint located at '{endpoint}'.");
             
-            var baseUri = new Uri(endpoint + (endpoint.EndsWith("/") ? "" : "/"));
+            var baseUri = new Uri(endpoint.TrimEnd('/') + "/");
             var handlers = delegatingHandlers?.Invoke()?.ToArray() ?? new DelegatingHandler[0];
 
             var client = HttpClientFactory.Create(handlers);
