@@ -86,7 +86,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommunicationClientValidatingEventArgs.cs" />
+    <Compile Include="HttpCommunicationClientValidatingEventArgs.cs" />
     <Compile Include="HttpRequestExceptionHandler.cs" />
     <Compile Include="IHttpServicePartitionClient.cs" />
     <Compile Include="IHttpServicePartitionClientFactory.cs" />

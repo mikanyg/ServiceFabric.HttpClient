@@ -34,7 +34,7 @@ namespace ServiceFabric.Services.Communication.Client
         /// Event handler that is fired when the Communication client is being validated. 
         /// Acts as an extension point to determine whether a cached communication client is still valid.
         /// </summary>
-        public event EventHandler<CommunicationClientValidatingEventArgs<HttpCommunicationClient>> ClientValidating;
+        public event EventHandler<HttpCommunicationClientValidatingEventArgs> ClientValidating;
 
         protected override void AbortClient(HttpCommunicationClient client)
         {            
@@ -73,7 +73,7 @@ namespace ServiceFabric.Services.Communication.Client
         {
             if (ClientValidating == null) return true;
 
-            var args = new CommunicationClientValidatingEventArgs<HttpCommunicationClient>
+            var args = new HttpCommunicationClientValidatingEventArgs
             {
                 Client = client,
                 IsValid = true
