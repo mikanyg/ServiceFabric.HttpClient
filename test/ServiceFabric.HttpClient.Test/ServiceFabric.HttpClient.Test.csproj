@@ -121,7 +121,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ServiceFabric.HttpClient\ServiceFabric.HttpClient.csproj">
+    <ProjectReference Include="..\..\src\ServiceFabric.HttpClient\ServiceFabric.HttpClient.csproj">
       <Project>{fca5f1d2-4e78-45cf-a3ae-5cc14269f200}</Project>
       <Name>ServiceFabric.HttpClient</Name>
     </ProjectReference>
