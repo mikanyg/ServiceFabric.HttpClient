@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ServiceFabric.HttpClient</id>
+    <version>0.9.0-pre</version>
+    <title>ServiceFabric.HttpClient</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/mikanyg/ServiceFabric.HttpClient/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/mikanyg/ServiceFabric.HttpClient</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright (c) 2017</copyright>
+    <tags>ServiceFabric Azure Fabric HttpClient</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+      <dependency id="Microsoft.ServiceFabric.Services" version="2.5.216" />
+    </dependencies>
+  </metadata>
+</package>
