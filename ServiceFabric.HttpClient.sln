@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1CD112A8-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C9154BF-3BDD-4652-8F2A-2F54A29539D7}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 		test\vsts.runsettings = test\vsts.runsettings
 	EndProjectSection
 EndProject
