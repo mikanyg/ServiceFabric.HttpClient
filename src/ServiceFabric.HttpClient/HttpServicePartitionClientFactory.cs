@@ -2,7 +2,7 @@
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication.Client;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public class HttpServicePartitionClientFactory : IHttpServicePartitionClientFactory
     {

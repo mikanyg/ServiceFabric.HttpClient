@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net;
+﻿using System.Diagnostics;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Communication.Client;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public class HttpRequestExceptionHandler : IExceptionHandler
     {

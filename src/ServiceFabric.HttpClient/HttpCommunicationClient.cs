@@ -2,22 +2,19 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Fabric;
-using System.Net.Http;
 using Microsoft.ServiceFabric.Services.Communication.Client;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public class HttpCommunicationClient : ICommunicationClient
     {
-        public HttpCommunicationClient(HttpClient client)
+        public HttpCommunicationClient(System.Net.Http.HttpClient client)
         {
-            if (client == null) throw new ArgumentNullException(nameof(client));
-
-            Http = client;
+            Http = client ?? throw new ArgumentNullException(nameof(client));
             Properties = new ConcurrentDictionary<string, object>();
         }
 
-        public HttpClient Http { get; }
+        public System.Net.Http.HttpClient Http { get; }
 
         /// <summary>
         /// Generic properties bag for the client.

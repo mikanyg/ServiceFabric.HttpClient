@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public interface IHttpServicePartitionClient
     {

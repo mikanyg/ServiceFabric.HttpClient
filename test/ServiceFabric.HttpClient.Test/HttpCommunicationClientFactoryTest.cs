@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using ServiceFabric.Services.Communication.Client;
+using ServiceFabric.HttpClient.Communication.Client;
 using Shouldly;
 
 namespace ServiceFabric.HttpClient.Test

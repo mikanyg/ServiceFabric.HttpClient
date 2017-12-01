@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
-using System.Reflection;
-using System.Runtime.ExceptionServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication.Client;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public class HttpCommunicationClientFactory : CommunicationClientFactoryBase<HttpCommunicationClient>
     {

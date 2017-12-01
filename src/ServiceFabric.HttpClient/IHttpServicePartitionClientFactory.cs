@@ -1,6 +1,6 @@
 ﻿using Microsoft.ServiceFabric.Services.Client;
 
-namespace ServiceFabric.Services.Communication.Client
+namespace ServiceFabric.HttpClient.Communication.Client
 {
     public interface IHttpServicePartitionClientFactory
     {
