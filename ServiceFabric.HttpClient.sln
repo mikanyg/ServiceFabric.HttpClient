@@ -1,12 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceFabric.HttpClient.Test", "test\ServiceFabric.HttpClient.Test\ServiceFabric.HttpClient.Test.csproj", "{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceFabric.HttpClient", "src\ServiceFabric.HttpClient\ServiceFabric.HttpClient.csproj", "{FCA5F1D2-4E78-45CF-A3AE-5CC14269F200}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1CD112A8-F95B-48A7-9E51-8217080A0BC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7C9154BF-3BDD-4652-8F2A-2F54A29539D7}"
@@ -15,25 +11,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		test\vsts.runsettings = test\vsts.runsettings
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceFabric.HttpClient", "src\ServiceFabric.HttpClient\ServiceFabric.HttpClient.csproj", "{47311F37-3128-4138-992C-501D8E160794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceFabric.HttpClient.Test", "test\ServiceFabric.HttpClient.Test\ServiceFabric.HttpClient.Test.csproj", "{18614D83-2917-434F-87BF-7284FD1163DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCA5F1D2-4E78-45CF-A3AE-5CC14269F200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCA5F1D2-4E78-45CF-A3AE-5CC14269F200}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCA5F1D2-4E78-45CF-A3AE-5CC14269F200}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCA5F1D2-4E78-45CF-A3AE-5CC14269F200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47311F37-3128-4138-992C-501D8E160794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47311F37-3128-4138-992C-501D8E160794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47311F37-3128-4138-992C-501D8E160794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47311F37-3128-4138-992C-501D8E160794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18614D83-2917-434F-87BF-7284FD1163DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18614D83-2917-434F-87BF-7284FD1163DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18614D83-2917-434F-87BF-7284FD1163DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18614D83-2917-434F-87BF-7284FD1163DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7C2E4BDA-A4E9-4B1B-AEC8-2CF3E9577E15} = {1CD112A8-F95B-48A7-9E51-8217080A0BC6}
+		{18614D83-2917-434F-87BF-7284FD1163DC} = {1CD112A8-F95B-48A7-9E51-8217080A0BC6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53C3C0FC-AD5D-49EE-8F03-270E98BAD2A9}
 	EndGlobalSection
 EndGlobal
